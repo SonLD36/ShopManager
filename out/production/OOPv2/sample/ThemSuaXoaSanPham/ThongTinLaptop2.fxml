@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ThemSuaXoaSanPham.ThongTinLapTop">
+   <children>
+      <TableView fx:id="thongTin" layoutX="5.0" layoutY="73.0" prefHeight="506.0" prefWidth="1186.0">
+        <columns>
+          <TableColumn fx:id="maCol" prefWidth="50.0" text="maSP" />
+          <TableColumn fx:id="tenCol" prefWidth="145.0" text="Tên SP" />
+            <TableColumn fx:id="hangsxCol" prefWidth="134.0" text="Hãng SX" />
+            <TableColumn fx:id="modelCol" prefWidth="114.0" text="Model" />
+            <TableColumn fx:id="giaCol" prefWidth="50.0" text="Giá ($)" />
+            <TableColumn fx:id="vxlCol" prefWidth="125.0" text="Vi Xử Lý" />
+            <TableColumn fx:id="ramCol" prefWidth="134.0" text="Ram" />
+            <TableColumn fx:id="ocungCol" prefWidth="113.0" text="Ổ Cứng" />
+            <TableColumn fx:id="klCol" prefWidth="97.0" text="Khối lượng (kg)" />
+            <TableColumn fx:id="slCol" prefWidth="64.0" text="Số Lượng" />
+            <TableColumn fx:id="bhCol" prefWidth="64.0" text="Bảo hành" />
+            <TableColumn fx:id="tuyChonCol" prefWidth="95.0" text="Tùy Chọn" />
+        </columns>
+      </TableView>
+      <Text layoutX="465.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin Laptop" wrappingWidth="228.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="themSpButton" layoutX="1066.0" layoutY="19.0" mnemonicParsing="false" onAction="#themSP" text="Thêm Sản Phẩm" />
+      <Button layoutX="965.0" layoutY="19.0" mnemonicParsing="false" onAction="#lamMoiBang" text="Làm mới bảng" />
+   </children>
+</AnchorPane>

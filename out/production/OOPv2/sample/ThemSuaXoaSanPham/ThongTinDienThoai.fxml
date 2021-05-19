@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ThemSuaXoaSanPham.ThongTinDienThoai">
+   <children>
+      <TableView fx:id="thongTin" layoutX="7.0" layoutY="73.0" prefHeight="506.0" prefWidth="1187.0">
+        <columns>
+          <TableColumn fx:id="maCol" prefWidth="50.0" text="Mã SP" />
+          <TableColumn fx:id="tenCol" prefWidth="145.0" text="Tên SP" />
+            <TableColumn fx:id="hangsxCol" prefWidth="114.0" text="Hãng SX" />
+            <TableColumn fx:id="modelCol" prefWidth="129.0" text="Model" />
+            <TableColumn fx:id="giaCol" prefWidth="79.0" text="Giá" />
+            <TableColumn fx:id="mhCol" prefWidth="110.0" text="Màn Hình" />
+            <TableColumn fx:id="pinCol" prefWidth="99.0" text="Thời Lượng Pin (mAh)" />
+            <TableColumn fx:id="chongNuocCol" prefWidth="82.0" text="Chống Nước" />
+            <TableColumn fx:id="camCol" prefWidth="138.0" text="Camera" />
+            <TableColumn fx:id="slCol" prefWidth="60.0" text="Số Lượng" />
+            <TableColumn fx:id="bhCol" prefWidth="82.0" text="Bảo Hành (tháng)" />
+            <TableColumn fx:id="tuyChonCol" prefWidth="98.0" text="Tùy Chọn" />
+        </columns>
+      </TableView>
+      <Text layoutX="487.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin Điện thoại" wrappingWidth="241.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="themSpButton" layoutX="1054.0" layoutY="18.0" mnemonicParsing="false" onAction="#themSP" text="Thêm Sản Phẩm" />
+      <Button layoutX="953.0" layoutY="18.0" mnemonicParsing="false" onAction="#lamMoiBang" text="Làm mới bảng" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="484.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ThanhToan.ThanhToan">
+   <children>
+      <TableView fx:id="thongTin" layoutX="77.0" layoutY="117.0" prefHeight="264.0" prefWidth="740.0">
+         <columns>
+            <TableColumn fx:id="maCol" prefWidth="52.0" text="Mã" />
+            <TableColumn fx:id="tenCol" prefWidth="125.0" text="Tên Sản Phẩm" />
+            <TableColumn fx:id="hangsxCol" minWidth="0.0" prefWidth="111.0" text="Hãng Sản Xuất" />
+            <TableColumn fx:id="modelCol" prefWidth="157.0" text="Model" />
+            <TableColumn fx:id="giaCol" prefWidth="91.0" text="Giá" />
+            <TableColumn fx:id="slCol" prefWidth="68.0" text="Số Lượng" />
+            <TableColumn fx:id="tuyChonCol" prefWidth="135.0" text="Tùy Chọn" />
+         </columns>
+      </TableView>
+      <Text layoutX="390.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giỏ hàng">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="thanhToanButton" layoutX="592.0" layoutY="21.0" mnemonicParsing="false" onAction="#buttonThanhToan" prefHeight="58.0" prefWidth="105.0" text="Thanh Toán" />
+      <Text layoutX="373.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng thanh toán: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="tongThanhToan" layoutX="540.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="76.08984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

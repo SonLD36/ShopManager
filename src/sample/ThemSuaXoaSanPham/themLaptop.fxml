@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="themSPPane" prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ThemSuaXoaSanPham.ThemSuaLaptop">
+   <children>
+      <Text layoutX="224.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sản Phẩm Laptop">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tenSP" layoutX="136.0" layoutY="63.0" />
+      <Label layoutX="61.0" layoutY="67.0" text="Tên SP" />
+      <TextField fx:id="giaBR" layoutX="136.0" layoutY="99.0" />
+      <Label layoutX="52.0" layoutY="104.0" text="Giá Bán Ra" />
+      <TextField fx:id="giaNV" layoutX="136.0" layoutY="140.0" />
+      <Label layoutX="44.0" layoutY="145.0" text="Giá Nhập Vào" />
+      <TextField fx:id="hangSX" layoutX="136.0" layoutY="178.0" />
+      <Label layoutX="40.0" layoutY="182.0" text="Hãng Sản Xuất" />
+      <TextField fx:id="model" layoutX="136.0" layoutY="222.0" />
+      <Label layoutX="61.0" layoutY="226.0" text="Model" />
+      <TextField fx:id="tgBH" layoutX="136.0" layoutY="269.0" />
+      <Label layoutX="14.0" layoutY="273.0" text="Thời Gian Bảo Hành" />
+      <TextField fx:id="ram" layoutX="391.0" layoutY="64.0" />
+      <Label layoutX="310.0" layoutY="68.0" text="Ram" />
+      <TextField fx:id="viXuLy" layoutX="391.0" layoutY="106.0" />
+      <Label layoutX="310.0" layoutY="110.0" text="Vi Xử Lý" />
+      <TextField fx:id="oCung" layoutX="391.0" layoutY="151.0" />
+      <Label layoutX="310.0" layoutY="155.0" text="Ổ Cứng" />
+      <TextField fx:id="khoiLuong" layoutX="391.0" layoutY="192.0" />
+      <Label layoutX="310.0" layoutY="196.0" text="Khối Lượng" />
+      <TextField fx:id="slSP" layoutX="136.0" layoutY="304.0" />
+      <Label layoutX="14.0" layoutY="308.0" text="Số Lượng Sản Phẩm" />
+      <Button fx:id="buttonThem" layoutX="414.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="48.0" prefWidth="86.0" text="Lưu" />
+   </children>
+</AnchorPane>

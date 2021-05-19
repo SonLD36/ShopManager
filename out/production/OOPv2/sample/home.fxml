@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1182.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <HBox layoutY="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="82.0" prefWidth="1175.0" style="-fx-background-color: #c2c2a3;">
+         <children>
+            <AnchorPane prefHeight="82.0" prefWidth="1036.0">
+               <children>
+                  <Text layoutX="395.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shop OOP 20202" textAlignment="CENTER" wrappingWidth="380.0">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="113.0" prefWidth="138.0">
+               <children>
+                  <Button fx:id="gioHang" layoutX="29.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="91.0" style="-fx-background-color: #c2c2a3;">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/ic_cart.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutX="1022.0" layoutY="156.0" prefHeight="483.0" prefWidth="153.0" style="-fx-background-color: #adad85;">
+         <children>
+            <AnchorPane prefHeight="172.0" prefWidth="153.0">
+               <children>
+                  <Text layoutX="31.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xem" textAlignment="CENTER" wrappingWidth="91.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông Tin" textAlignment="CENTER" wrappingWidth="134.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="166.0" prefWidth="153.0">
+               <children>
+                  <Button fx:id="laptopTT" contentDisplay="TOP" layoutX="6.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="119.0" text="Laptop">
+                     <graphic>
+                        <ImageView fitHeight="87.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Night-Owl-HD-for-Laptop-Mac-PC-Use.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="dienThoaiTT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="136.0" prefWidth="142.0" text="Điện thoại">
+               <graphic>
+                  <ImageView fitHeight="104.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/camera-dien-thoai-iphone-12.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="thongTin" layoutX="194.0" layoutY="156.0" prefHeight="483.0" prefWidth="828.0">
+         <columns>
+            <TableColumn fx:id="maCol" prefWidth="52.0" text="Mã SP" />
+            <TableColumn fx:id="tenCol" prefWidth="125.0" text="Tên SP" />
+            <TableColumn fx:id="hangsxCol" minWidth="0.0" prefWidth="111.0" text="Hãng SX" />
+            <TableColumn fx:id="modelCol" prefWidth="157.0" text="Model" />
+            <TableColumn fx:id="giaCol" prefWidth="91.0" text="Giá" />
+            <TableColumn fx:id="slCol" prefWidth="68.0" text="Số Lượng" />
+            <TableColumn fx:id="bhCol" prefWidth="88.0" text="Bảo Hành" />
+            <TableColumn fx:id="tuyChonCol" prefWidth="135.0" text="Tùy Chọn" />
+         </columns>
+      </TableView>
+      <TextField fx:id="timKiemInput" layoutX="427.0" layoutY="106.0" prefHeight="25.0" prefWidth="321.0" promptText="Tìm Kiếm">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="18.0" layoutY="156.0" prefHeight="483.0" prefWidth="176.0" style="-fx-background-color: #adad85;">
+         <children>
+            <AnchorPane prefHeight="87.0" prefWidth="178.0">
+               <children>
+                  <Text layoutX="13.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tính lợi nhuận">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <DatePicker fx:id="denNgay" layoutX="34.0" layoutY="122.0" prefHeight="25.0" prefWidth="109.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></DatePicker>
+                  <DatePicker fx:id="tuNgay" layoutX="34.0" layoutY="51.0" prefHeight="25.0" prefWidth="109.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></DatePicker>
+                  <Button layoutX="37.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Tính Lợi Nhuận" fx:id="xemLoiNhuan">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Text layoutX="8.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Từ ngày">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="8.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đến ngày">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="thongTinLoiNhuan" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lợi nhuận từ ngày">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="tuNgayText" layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021-11-05">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="97.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="đến ngày">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="denNgayText" layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021-11-05">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="97.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="là">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="loiNhuanText" layoutX="25.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="148.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button fx:id="buttonLamMoi" layoutX="903.0" layoutY="119.0" mnemonicParsing="false" text="Làm mới bảng" />
+   </children>
+</AnchorPane>
