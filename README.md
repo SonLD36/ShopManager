@@ -7,10 +7,15 @@ This project has used libraries:
 	
 NOTICE: using IntelliJ and set VMOption:
 	1. click Run in menu bar.
+	
 	2. choose Edit configurations..
+	
 	3. Add to VMOption this text: --module-path
+	
 					"C:\javafx-sdk-15.0.1\lib" (change path for conform)
+					
 					--add-modules
+					
 						javafx.controls,javafx.fxml
 
 Run file btloop.sql before run project
