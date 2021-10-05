@@ -6,6 +6,7 @@ This project has used libraries:
 	
 	
 NOTICE: using IntelliJ and set VMOption:
+	
 	1. click Run in menu bar.
 	
 	2. choose Edit configurations..
