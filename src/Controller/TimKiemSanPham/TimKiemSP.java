@@ -1,3 +1,5 @@
+//Lê Đình Sơn
+
 package Controller.TimKiemSanPham;
 
 import Controller.ThaoTacVoiBang;
@@ -47,7 +49,7 @@ public class TimKiemSP implements ThaoTacVoiDoiTuong {
         dt.addAll(lt);
         return dt;
     };
-
+    //set cac gia tri cua bang tim kiem
     public void TimKiemSanPham(TableView<SanPham> thongTin,TextField timKiemInput,TableColumn<SanPham, Integer> maCol,TableColumn<SanPham, String>tenCol,
                                TableColumn<SanPham, String> hangsxCol,TableColumn<SanPham, String> modelCol,TableColumn<SanPham, Double> giaCol,
                                TableColumn<SanPham, Integer> slCol,TableColumn<SanPham, Integer> bhCol,TableColumn<SanPham, String> tuyChonCol) {
@@ -60,7 +62,7 @@ public class TimKiemSP implements ThaoTacVoiDoiTuong {
         bhCol.setCellValueFactory(new PropertyValueFactory<SanPham, Integer>("thoiGianBaoHanh"));
         slCol.setCellValueFactory(new PropertyValueFactory<SanPham, Integer>("soLuongSP"));
         Callback<TableColumn<SanPham, String>, TableCell<SanPham, String>> cellFoctory = (TableColumn<SanPham, String> param) -> {
-
+            //set cac button tien ich cho tung san pham
             final TableCell<SanPham, String> cell = new TableCell<SanPham, String>() {
                 @Override
                 public void updateItem(String item, boolean empty) {
@@ -103,7 +105,7 @@ public class TimKiemSP implements ThaoTacVoiDoiTuong {
             };
             return cell;
         };
-
+        //su dung FilteredList de tim kiem san pham theo yeu cau
         FilteredList<SanPham> filteredList = new FilteredList<>(listSanPham, b -> true);
 
         timKiemInput.textProperty().addListener((observable, oldvalue, newValue) -> {
@@ -126,7 +128,7 @@ public class TimKiemSP implements ThaoTacVoiDoiTuong {
         thongTin.setItems(sortedList);
 
     }
-
+    //khoi tao danh sach cho list hien thi tren trang tim kiem
     public ObservableList<SanPham> khoiTaoDanhSach(List<SanPham> sanPhams) {
         listSanPham = FXCollections.observableArrayList();
         List<SanPham> cacSamPham = getData();

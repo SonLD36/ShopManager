@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//Lê Đinh Sơn
 package Model.SanPham;
 
 import Data.Connect;
@@ -104,6 +105,7 @@ public class SanPham {
         this.thoiGianBaoHanh = thoiGianBaoHanh;
     }
 
+    //Cap nhat lai so luong san pham sau khi mua ban
     public int capNhatSLSP(List<SanPham> sanPhamList) {
         String updateQuery = null;
         int isSuccessful = 0;
@@ -135,7 +137,7 @@ public class SanPham {
         }
         return isSuccessful;
     }
-
+    //lay ra loi nhuan cua san pham do
     public double getLoiNhuan(List<SanPham> sanPhamList) {
         double ketQua = 0;
         ResultSet resultSet = null;
@@ -161,6 +163,7 @@ public class SanPham {
         return ketQua;
     }
 
+    //lay ra gia nhap vao cua san pham
     public double getGiaNhapVao() {
 
         double ketQua = 0;
@@ -182,6 +185,7 @@ public class SanPham {
         return ketQua;
     }
 
+    //xoa san pham trong co so du lieu
     public void xoaSanPham() {
         if (this instanceof DienThoai) {
             query = "DELETE FROM `dienthoai` WHERE `dienthoai`.`MaSP` = '"+ this.getMaSanPham() + "'";

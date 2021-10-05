@@ -1,3 +1,4 @@
+//Lê Đình Sơn
 package Controller.ThemSuaXoaSanPham;
 
 import Controller.ThaoTacVoiBang;
@@ -39,6 +40,8 @@ public abstract class ThongTinSanPham implements ThaoTacVoiDoiTuong, ThaoTacVoiB
     PreparedStatement preparedStatement = null ;
     ResultSet resultSet = null ;
     Connection connection = Connect.setConnection();
+    //lam moi lai bang
     public abstract void lamMoiBang(ActionEvent event) ;
+    //them san pham
     public abstract void themSP(ActionEvent event);
 }

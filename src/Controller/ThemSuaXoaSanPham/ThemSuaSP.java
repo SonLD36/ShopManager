@@ -1,3 +1,4 @@
+//Lê Đình Sơn
 package Controller.ThemSuaXoaSanPham;
 
 import Controller.ThaoTacVoiBang;
@@ -44,7 +45,7 @@ public abstract class ThemSuaSP {
             " (?,?,?,?,?,?,?)";
     protected Connection con = Connect.setConnection();
     ResultSet resultSet = null;
-
+    //set cac gia tri cho truong nhap vao
     public void setTextField(String tenSanPham, String hangSanXuat, String model, double gia, int maSanPham, int thoiGianBaoHanh, int soLuongSP, double giaNV) {
         tenSP.setText(tenSanPham);
         giaBR.setText(String.valueOf(gia));
@@ -56,9 +57,11 @@ public abstract class ThemSuaSP {
     }
 
     public abstract int themSuaSP();
+    //ham dung de lua chon cau lenh query
     public void setUpdate(boolean b) {
         this.isUpdate = b;
     }
     public abstract void handleButton(ActionEvent event);
+    //ham dung de lua chon cau lenh lay query
     public abstract void getQuery(int maSp);
 }

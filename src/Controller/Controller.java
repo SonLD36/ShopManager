@@ -1,3 +1,4 @@
+//Nguyễn Đình Hiếu
 package Controller;
 
 
@@ -88,6 +89,7 @@ public class Controller implements Initializable {
     @FXML
     private Button xemLoiNhuan;
 
+    //set thong tin bang tim kiem
     public void setBangThongTin() {
         TimKiemSP timKiemSP = new TimKiemSP();
         timKiemSP.TimKiemSanPham(thongTin,timKiemInput,maCol,tenCol,hangsxCol,modelCol,giaCol,slCol,bhCol,tuyChonCol);
@@ -105,6 +107,7 @@ public class Controller implements Initializable {
             setBangThongTin();
         });
         Stage thongTin = new Stage();
+        //xu ly event cua button xem thong tin laptop
         laptopTT.setOnAction((ActionEvent event) -> {
             Parent root = null;
             try {
@@ -116,6 +119,7 @@ public class Controller implements Initializable {
                 e.printStackTrace();
             }
         });
+        //xu ly event cua button xem thong tin dien thoai
         dienThoaiTT.setOnAction((ActionEvent event) -> {
             Parent root = null;
             try {
@@ -127,7 +131,7 @@ public class Controller implements Initializable {
                 e.printStackTrace();
             }
         });
-
+        //xu ly event cua button xem thong tin gio hang
         gioHang.setOnAction((ActionEvent event) -> {
             Parent root = null;
             try {
@@ -139,6 +143,7 @@ public class Controller implements Initializable {
                 e.printStackTrace();
             }
         });
+        //xu ly event cua button xem loi nhuan
         xemLoiNhuan.setOnAction((ActionEvent event) -> {
             LocalDate tuNgayValue = tuNgay.getValue();
             LocalDate denNgayValue = denNgay.getValue();

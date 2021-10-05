@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface GetThongTinSanPham {
     Connection conn = Connect.setConnection();
+    //lay thong tin tat ca san pham
     public List<SanPham> getThongTin() ;
 }
